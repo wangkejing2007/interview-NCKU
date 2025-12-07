@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成大醫學系面試總評 - 可靜</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f0f2f5;
+        }
+        .font-serif {
+            font-family: 'Noto Serif TC', serif;
+        }
+        .ncku-red {
+            color: #B01F24;
+        }
+        .bg-ncku-red {
+            background-color: #B01F24;
+        }
+        /* Vertical Line for Timeline effect */
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 4px;
+            background-color: #e5e7eb;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+        .print-hide {
+            display: block;
+        }
+        @media print {
+            .print-hide { display: none; }
+            body { background-color: white; }
+            .timeline-line::before { display: none; }
+        }
+    </style>
+</head>
+<body class="py-8 px-4 flex justify-center">
+
+    <!-- Infographic Container -->
+    <div class="bg-white max-w-2xl w-full shadow-2xl rounded-3xl overflow-hidden relative">
+        
+        <!-- Header Section -->
+        <header class="bg-ncku-red text-white p-8 text-center relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-full opacity-10">
+                <i class="fa-solid fa-staff-snake text-9xl absolute -left-10 -bottom-10"></i>
+                <i class="fa-solid fa-hospital text-9xl absolute -right-10 -top-10"></i>
+            </div>
+            
+            <div class="relative z-10">
+                <div class="inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-bold tracking-widest mb-4">
+                    NCKU MEDICAL SCHOOL
+                </div>
+                <h1 class="text-4xl font-serif font-bold mb-2">面試模擬評估總表</h1>
+                <p class="text-lg opacity-90">院長總評報告</p>
+                
+                <div class="mt-6 flex justify-center items-center space-x-2">
+                    <span class="text-sm opacity-75">CANDIDATE:</span>
+                    <span class="font-bold text-xl">可靜 (Angela)</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Score & Verdict Section -->
+        <section class="py-8 px-6 text-center border-b border-gray-100">
+            <div class="flex justify-center items-center mb-4">
+                <div class="relative">
+                    <svg class="w-40 h-40 transform -rotate-90">
+                        <circle cx="80" cy="80" r="70" stroke="#f3f4f6" stroke-width="10" fill="transparent"/>
+                        <circle cx="80" cy="80" r="70" stroke="#B01F24" stroke-width="10" fill="transparent" stroke-dasharray="440" stroke-dashoffset="44" stroke-linecap="round"/>
+                    </svg>
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                        <span class="block text-5xl font-black ncku-red">90</span>
+                        <span class="text-gray-400 text-xs">SCORE</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="inline-flex items-center bg-green-100 text-green-800 px-6 py-2 rounded-full font-bold text-lg shadow-sm">
+                <i class="fa-solid fa-check-circle mr-2"></i> 同意錄取 Recommended
+            </div>
+        </section>
+
+        <!-- Core Competencies (3 Pillars) -->
+        <section class="bg-gray-50 py-10 px-8 relative">
+            <h2 class="text-center text-2xl font-bold text-gray-800 mb-8 font-serif">
+                <span class="border-b-4 border-red-800 pb-1">關鍵錄取理由</span>
+            </h2>
+            
+            <div class="space-y-6">
+                <!-- Item 1 -->
+                <div class="flex items-start bg-white p-5 rounded-xl shadow-sm border-l-4 border-blue-600">
+                    <div class="bg-blue-100 text-blue-600 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 text-xl mr-4">
+                        <i class="fa-solid fa-earth-asia"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-800">社會感知與批判</h3>
+                        <p class="text-sm text-gray-600 mt-1">針對越南空汙與電動車政策，能從經濟現實切入，具備良醫的社會底層觀察力。</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex items-start bg-white p-5 rounded-xl shadow-sm border-l-4 border-purple-600">
+                    <div class="bg-purple-100 text-purple-600 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 text-xl mr-4">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-800">清晰的自我認知</h3>
+                        <p class="text-sm text-gray-600 mt-1">誠實面對語言挑戰並提出解方；對「小兒外科」有基於手巧與少子化的具體規劃。</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="flex items-start bg-white p-5 rounded-xl shadow-sm border-l-4 border-red-600">
+                    <div class="bg-red-100 text-red-600 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 text-xl mr-4">
+                        <i class="fa-solid fa-train"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-gray-800">穩定的心理素質</h3>
+                        <p class="text-sm text-gray-600 mt-1">臨場反應佳。提出的「火車理論」（研究/服務/教學）結構完整，邏輯清晰。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pros vs Cons Comparison -->
+        <section class="py-10 px-6">
+            <div class="flex justify-center mb-8">
+                <h2 class="text-2xl font-bold text-gray-800 font-serif">表現分析雷達</h2>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <!-- Pros -->
+                <div class="bg-green-50 rounded-2xl p-5">
+                    <h3 class="text-green-800 font-bold mb-3 flex items-center">
+                        <i class="fa-solid fa-thumbs-up mr-2"></i> 優勢亮點
+                    </h3>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li class="flex items-start"><span class="mr-2">•</span> 臨場反應迅速穩健</li>
+                        <li class="flex items-start"><span class="mr-2">•</span> 善用越南在地經驗</li>
+                        <li class="flex items-start"><span class="mr-2">•</span> 比喻生動 (火車理論)</li>
+                    </ul>
+                </div>
+
+                <!-- Cons -->
+                <div class="bg-orange-50 rounded-2xl p-5">
+                    <h3 class="text-orange-800 font-bold mb-3 flex items-center">
+                        <i class="fa-solid fa-circle-exclamation mr-2"></i> 待改進
+                    </h3>
+                    <ul class="text-sm text-gray-700 space-y-2">
+                        <li class="flex items-start"><span class="mr-2">•</span> 時間掌控 (故事被切斷)</li>
+                        <li class="flex items-start"><span class="mr-2">•</span> 內容略顯制式背稿</li>
+                        <li class="flex items-start"><span class="mr-2">•</span> 情緒控管 (結束時歡呼)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dean's Advice Checklist -->
+        <section class="bg-slate-900 text-white py-12 px-8 relative overflow-hidden">
+            <!-- Decorative circle -->
+            <div class="absolute -right-10 -top-10 w-40 h-40 bg-slate-800 rounded-full opacity-50"></div>
+            
+            <h2 class="text-2xl font-bold mb-8 relative z-10 text-center font-serif text-yellow-500">
+                <i class="fa-solid fa-lightbulb mr-2"></i> 院長的正式面試錦囊
+            </h2>
+
+            <div class="space-y-6 relative z-10">
+                
+                <div class="flex items-center">
+                    <div class="text-4xl font-black text-slate-700 bg-white w-14 h-14 rounded-lg flex items-center justify-center mr-4 shadow-lg flex-shrink-0">
+                        1
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg text-yellow-400">結論先行 (Pyramid Principle)</h4>
+                        <p class="text-slate-300 text-sm mt-1">避免被切斷。將「最感人故事」放開頭，先講核心動機。</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <div class="text-4xl font-black text-slate-700 bg-white w-14 h-14 rounded-lg flex items-center justify-center mr-4 shadow-lg flex-shrink-0">
+                        2
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg text-yellow-400">強化「為什麼是成大」</h4>
+                        <p class="text-slate-300 text-sm mt-1">連結「急重難罕」特色或「人文教育」，深化與小兒外科的關聯。</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <div class="text-4xl font-black text-slate-700 bg-white w-14 h-14 rounded-lg flex items-center justify-center mr-4 shadow-lg flex-shrink-0">
+                        3
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg text-yellow-400">深化越南差異觀察</h4>
+                        <p class="text-slate-300 text-sm mt-1">這是最大優勢。多準備兩地醫療體系差異的見解。</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <div class="text-4xl font-black text-slate-700 bg-white w-14 h-14 rounded-lg flex items-center justify-center mr-4 shadow-lg flex-shrink-0">
+                        4
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg text-red-400">注意情緒控管</h4>
+                        <p class="text-slate-300 text-sm mt-1">務必確認完全登出、關閉麥克風後再進行歡呼。</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-100 p-6 text-center text-xs text-gray-500">
+            <p class="mb-2">NATIONAL CHENG KUNG UNIVERSITY</p>
+            <p>模擬面試評估報告 • 僅供教學參考</p>
+        </footer>
+
+    </div>
+
+    <!-- Print Button (Fixed) -->
+    <button onclick="window.print()" class="print-hide fixed bottom-6 right-6 bg-slate-800 text-white p-4 rounded-full shadow-lg hover:bg-slate-700 transition z-50">
+        <i class="fa-solid fa-print text-xl"></i>
+    </button>
+
+</body>
+</html>
