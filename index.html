@@ -53,13 +53,17 @@
         <div class="max-w-5xl mx-auto relative z-10">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
                 <div>
-                    <div class="inline-flex items-center gap-2 bg-white/20 px-3 py-1 rounded-full text-sm font-medium mb-4 backdrop-blur-sm">
-                        <i data-lucide="calendar" width="16" height="16"></i>
+                    <!-- 修改部分：將原本的 div 改為 a 標籤，並加入懸浮按鈕樣式與連結 -->
+                    <a href="11-26_面試：成大醫學系視訊面試紀錄.mp3" 
+                       target="_blank" 
+                       class="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full text-sm font-medium mb-4 backdrop-blur-sm border border-white/20 shadow-md transition-all duration-300 hover:bg-white/30 hover:scale-105 hover:-translate-y-1 hover:shadow-xl cursor-pointer group">
+                        <i data-lucide="play-circle" width="16" height="16" class="group-hover:text-amber-300 transition-colors"></i>
                         <span>2025-11-27</span>
-                        <span class="mx-1">|</span>
+                        <span class="mx-1 opacity-60">|</span>
                         <i data-lucide="video" width="16" height="16"></i>
-                        <span>視訊面試</span>
-                    </div>
+                        <span>面試錄音</span>
+                    </a>
+                    
                     <h1 class="text-4xl md:text-5xl font-bold serif-font mb-2 tracking-wide">國立成功大學 醫學系</h1>
                     <h2 class="text-xl md:text-2xl text-teal-100 font-light">入學面試紀錄檔案</h2>
                 </div>
