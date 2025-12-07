@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成大醫學系面試紀錄 | 柯靜 (Pearl)</title>
+    <!-- Tailwind CSS (用於快速樣式設計) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (學術與現代感字體) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons (用於視覺圖標) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f0f4f8; /* 淺灰藍背景，專業冷靜 */
+            color: #334155;
+        }
+        .serif-font {
+            font-family: 'Noto Serif TC', serif;
+        }
+        .gradient-header {
+            background: linear-gradient(135deg, #0f766e 0%, #0e7490 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #e2e8f0;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 頂部 Hero Section -->
+    <header class="gradient-header text-white pb-24 pt-12 px-6 relative overflow-hidden">
+        <!-- 背景裝飾 -->
+        <div class="absolute top-0 right-0 opacity-10 transform translate-x-1/4 -translate-y-1/4">
+            <i data-lucide="stethoscope" width="400" height="400"></i>
+        </div>
+
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 bg-white/20 px-3 py-1 rounded-full text-sm font-medium mb-4 backdrop-blur-sm">
+                        <i data-lucide="calendar" width="16" height="16"></i>
+                        <span>2025-11-27</span>
+                        <span class="mx-1">|</span>
+                        <i data-lucide="video" width="16" height="16"></i>
+                        <span>視訊面試</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold serif-font mb-2 tracking-wide">國立成功大學 醫學系</h1>
+                    <h2 class="text-xl md:text-2xl text-teal-100 font-light">入學面試紀錄檔案</h2>
+                </div>
+                <div class="text-right">
+                    <p class="text-teal-100 text-sm">Location</p>
+                    <p class="font-semibold text-lg flex items-center gap-2 justify-end">
+                        <i data-lucide="map-pin" width="18" height="18"></i>
+                        越南 胡志明市
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 -mt-16 pb-20 relative z-20">
+        
+        <!-- 候選人簡介卡片 -->
+        <div class="glass-card rounded-2xl p-8 mb-10 flex flex-col md:flex-row gap-8 items-center md:items-start animate-fade-in-up">
+            <div class="w-32 h-32 bg-slate-200 rounded-full flex items-center justify-center flex-shrink-0 border-4 border-white shadow-lg text-slate-400">
+                <i data-lucide="user" width="64" height="64"></i>
+            </div>
+            <div class="flex-1 w-full">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                    <div>
+                        <h2 class="text-3xl font-bold text-slate-800 mb-1">柯靜 (Pearl)</h2>
+                        <p class="text-teal-600 font-medium">申請志願：小兒外科醫師</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 flex gap-2">
+                        <span class="px-3 py-1 bg-teal-50 text-teal-700 rounded text-xs font-bold uppercase tracking-wider">感知能力</span>
+                        <span class="px-3 py-1 bg-teal-50 text-teal-700 rounded text-xs font-bold uppercase tracking-wider">分析能力</span>
+                        <span class="px-3 py-1 bg-teal-50 text-teal-700 rounded text-xs font-bold uppercase tracking-wider">同理心</span>
+                    </div>
+                </div>
+                <hr class="border-slate-200 my-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-600">
+                    <p class="flex items-start gap-2">
+                        <i data-lucide="award" class="text-amber-500 mt-0.5" width="16" height="16"></i>
+                        <span><strong>特殊經歷：</strong> 擔任首屆社會服務社社長，具備組織與領導經驗。</span>
+                    </p>
+                    <p class="flex items-start gap-2">
+                        <i data-lucide="scissors" class="text-blue-500 mt-0.5" width="16" height="16"></i>
+                        <span><strong>技能亮點：</strong> 營隊中展現縫合與綁線天賦，手巧且上手快。</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 核心理念展示區 (火車理論) -->
+        <section class="mb-16">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="p-2 bg-amber-100 rounded-lg text-amber-600">
+                    <i data-lucide="lightbulb" width="24" height="24"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-slate-800">醫學職涯核心理念：火車理論</h3>
+            </div>
+            
+            <div class="bg-slate-800 rounded-2xl p-8 text-white shadow-xl relative overflow-hidden">
+                <div class="absolute right-0 bottom-0 opacity-5">
+                    <i data-lucide="train-front" width="300" height="300"></i>
+                </div>
+                
+                <p class="text-slate-300 mb-8 italic text-lg max-w-2xl">
+                    "我認為醫學就像一列火車，只有緊密的連結才能讓整條列車穩定向前。"
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+                    <!-- 火車頭 -->
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/10 hover:bg-white/20 transition-colors">
+                        <div class="w-12 h-12 bg-rose-500 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="locomotive" width="24" height="24" class="text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">火車頭：研究</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed">臨床研究是帶領醫學走上更好方向的動力與指引。</p>
+                    </div>
+
+                    <!-- 連結 -->
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/10 hover:bg-white/20 transition-colors relative">
+                        <!-- 連結線示意 -->
+                        <div class="hidden md:block absolute top-1/2 -left-3 w-6 h-1 bg-slate-500"></div>
+                        <div class="hidden md:block absolute top-1/2 -right-3 w-6 h-1 bg-slate-500"></div>
+                        
+                        <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="link" width="24" height="24" class="text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">連結：教學</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed">車廂之間的緊密連結，傳承經驗，確保穩定前行。</p>
+                    </div>
+
+                    <!-- 車廂 -->
+                    <div class="bg-white/10 backdrop-blur rounded-xl p-6 border border-white/10 hover:bg-white/20 transition-colors">
+                        <div class="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center mb-4">
+                            <i data-lucide="users" width="24" height="24" class="text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold mb-2">車廂：服務</h4>
+                        <p class="text-slate-300 text-sm leading-relaxed">醫院服務與城鄉醫療，承載著病人的需求與信任。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 面試問答時間軸 -->
+        <section>
+            <div class="flex items-center justify-between mb-8">
+                <div class="flex items-center gap-3">
+                    <div class="p-2 bg-teal-100 rounded-lg text-teal-600">
+                        <i data-lucide="message-circle" width="24" height="24"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-slate-800">面試重點實錄 (Q&A)</h3>
+                </div>
+            </div>
+
+            <div class="relative timeline-line space-y-8 pl-4">
+                
+                <!-- Q1: 環境與時事 -->
+                <div class="relative pl-12">
+                    <div class="absolute left-0 top-0 w-12 h-12 bg-white border-2 border-teal-500 rounded-full flex items-center justify-center z-10 text-teal-600 font-bold shadow-sm">Q1</div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="mb-3">
+                            <span class="text-xs font-bold text-teal-600 uppercase tracking-wide">環境與時事題</span>
+                            <h4 class="text-lg font-bold text-slate-800">關於胡志明市的空汙與電動車政策</h4>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="bg-slate-50 p-4 rounded-lg border-l-4 border-slate-300">
+                                <p class="text-sm text-slate-600 font-medium mb-1">教授提問：</p>
+                                <p class="text-slate-700">聽說妳那邊空汙嚴重？知道越南政府 2030 全面電動機車政策嗎？</p>
+                            </div>
+                            <div class="pl-2">
+                                <p class="text-sm text-teal-600 font-bold mb-2 flex items-center gap-2">
+                                    <i data-lucide="check-circle-2" width="16" height="16"></i> 
+                                    候選人回答重點：
+                                </p>
+                                <ul class="list-disc list-inside text-slate-700 space-y-2 text-sm leading-relaxed">
+                                    <li><strong>現況觀察：</strong>居住於富人區感受還好，但小學科展數據顯示 PM2.5 指數確實偏高。</li>
+                                    <li><strong>時事認知：</strong>知曉 VinFast 集團正在推動電動計程車。</li>
+                                    <li><strong>批判思考：</strong>認為 2030 全面電動化有困難，因基礎建設仍落後，且人民薪資難以負擔昂貴電車。</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q2: 挑戰與應對 -->
+                <div class="relative pl-12">
+                    <div class="absolute left-0 top-0 w-12 h-12 bg-white border-2 border-amber-500 rounded-full flex items-center justify-center z-10 text-amber-600 font-bold shadow-sm">Q2</div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="mb-3">
+                            <span class="text-xs font-bold text-amber-600 uppercase tracking-wide">情境題</span>
+                            <h4 class="text-lg font-bold text-slate-800">來台就讀將面臨的最大挑戰？</h4>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="pl-2">
+                                <p class="text-sm text-slate-700 mb-2">
+                                    <span class="font-bold text-amber-600">預測困難：</span> 臺語 (Taiwanese) 語言障礙。
+                                </p>
+                                <p class="text-sm text-slate-700">
+                                    <span class="font-bold text-teal-600">解決方案：</span> 
+                                    主動走入社區服務，透過與長輩聊天實戰練習。這不僅能克服語言問題，更能透過服務增強自身能力。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q3: 優勢與特質 -->
+                <div class="relative pl-12">
+                    <div class="absolute left-0 top-0 w-12 h-12 bg-white border-2 border-blue-500 rounded-full flex items-center justify-center z-10 text-blue-600 font-bold shadow-sm">Q3</div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="mb-3">
+                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wide">自我行銷</span>
+                            <h4 class="text-lg font-bold text-slate-800">為什麼我們要錄取妳？（最大優勢）</h4>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-blue-800 mb-2 flex items-center gap-2">
+                                    <i data-lucide="heart-pulse" width="16" height="16"></i> 感知能力
+                                </h5>
+                                <p class="text-sm text-blue-900">
+                                    以社團社長經驗為例，能敏銳察覺隊員情緒與需求。應用於醫療上，能建立更緩和、信任的醫病關係。
+                                </p>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h5 class="font-bold text-blue-800 mb-2 flex items-center gap-2">
+                                    <i data-lucide="brain-circuit" width="16" height="16"></i> 分析能力
+                                </h5>
+                                <p class="text-sm text-blue-900">
+                                    善於適才適所（分配職務）並預判團隊方向。應用於醫療上，能釐清複雜線索，冷靜做出正確決策。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Q4: 未來規劃 -->
+                <div class="relative pl-12">
+                    <div class="absolute left-0 top-0 w-12 h-12 bg-white border-2 border-rose-500 rounded-full flex items-center justify-center z-10 text-rose-600 font-bold shadow-sm">Q4</div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="mb-3">
+                            <span class="text-xs font-bold text-rose-600 uppercase tracking-wide">職涯規劃</span>
+                            <h4 class="text-lg font-bold text-slate-800">畢業後的醫師樣貌與規劃？</h4>
+                        </div>
+                        <div class="space-y-2">
+                             <div class="flex items-center gap-3 mb-4">
+                                <div class="px-4 py-2 bg-rose-100 text-rose-700 rounded-full text-sm font-bold">
+                                    目標：小兒外科醫師
+                                </div>
+                                <div class="px-4 py-2 bg-slate-100 text-slate-600 rounded-full text-sm font-bold">
+                                    地點：爭取成大實習
+                                </div>
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 text-sm text-slate-700">
+                                    <i data-lucide="check" class="text-rose-500 shrink-0 mt-1" width="16" height="16"></i>
+                                    <span><strong>為何選外科？</strong> 喜歡手術帶來立竿見影的改善成就感；且縫合與綁線操作上手快，具備外科天賦。</span>
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-slate-700">
+                                    <i data-lucide="check" class="text-rose-500 shrink-0 mt-1" width="16" height="16"></i>
+                                    <span><strong>為何選兒科？</strong> 觀察到少子化趨勢，家長更重視兒童醫療品質；結合自身經歷，希望能用精湛醫術幫助孩童。</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 py-8 text-center text-sm">
+        <p class="mb-2">Document generated based on interview transcript dated 2025-11-27.</p>
+        <p>&copy; 2025 柯靜面試紀錄檔案 | Confidential</p>
+    </footer>
+
+    <script>
+        // 初始化 Lucide 圖標
+        lucide.createIcons();
+    </script>
+</body>
+</html>
